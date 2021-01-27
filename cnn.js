@@ -14,7 +14,7 @@ const db = pgp(config)
 db.any("select * from factura").then(res => {console.log(res)})
 db.any("select * from pagos_clientes").then(res => {console.log(res)})
 db.any("select * from tipos_pago").then(res=>{console.log(res)})
-//db.any("select * from usuario").then(res=>{console.log(res)})
+db.any("select * from usuario").then(res=>{console.log(res)})
 
 exports.db=db;
 
