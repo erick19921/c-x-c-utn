@@ -4,7 +4,8 @@ const config = {
     port:"5432",
     database:"d2ekg96sn2m8uu",
     user:"zttsxgiuobpkns",
-    password:"5e1874412c937635995cc24c5eb96ec4fbc128c7469e64ffb42567650882891d"
+    password:"5e1874412c937635995cc24c5eb96ec4fbc128c7469e64ffb42567650882891d",
+    ssl: true
 }
 const pgp = pgPromise({})
 const db = pgp(config)

@@ -18,8 +18,8 @@ const getUsuario = async (req, res) => {
 //consulta de usuarios por tipo: cajero/administrador 
 const getUsuarioByTipo = async (req, res) => {
     try {
-        const tipo = req.params.tipo
-        const response = await db.any("select * from usuario WHERE tipo_usuario=$1;", [tipo])
+        const tipo_usuario = req.params.tipo_usuario
+        const response = await db.any("select * from usuario WHERE tipo_usuario=$1;", [tipo_usuario])
         res.json(response)
     } catch (error) {
         res.json({
