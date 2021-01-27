@@ -1,0 +1,23 @@
+{
+  "name": "cxc",
+  "version": "1.0.0",
+  "description": "Modulo 6 Cuentas por cobrar",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Grupo 6",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "express-resource": "^1.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "pg-promise": "^10.9.1"
+  }
+}
